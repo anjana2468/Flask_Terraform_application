@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    
+    <p>This is the home page of the Flask app. We have built a simple application to demonstrate how Flask routes, templates, and static files work together to create dynamic web pages.</p>
+
+    <h2>Features of this Flask App:</h2>
+    <ul>
+        <li>Dynamic URL routing for multiple pages</li>
+        <li>Seamless navigation between Home, About, and Contact pages</li>
+        <li>Redirection from specific routes</li>
+        <li>Custom static styles applied using CSS</li>
+    </ul>
+
+    <p>This web app is a simple introduction to the core concepts of Flask development, providing a hands-on approach to understanding Flask’s routing, templating, and more.</p>
+
+    
+    <p>
+        <a href="{{ url_for('about') }}">Go to About</a> 
+        
+    </p>
+    <p>
+        <a href="{{ url_for('contact') }}">Go to Contact</a>
+    
+    </p>
+
+    <p>If you want to explore Flask more, check out the <a href="https://flask.palletsprojects.com/" target="_blank">official Flask documentation</a>.</p>
+
+    <footer>
+        <p>&copy; 2024 FlaskApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
