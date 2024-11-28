@@ -21,11 +21,10 @@ def contact():
         email = request.form['email']
         message = request.form['message']
         
-        # Here you would typically handle the data (e.g., save to a database or send an email)
-        # For now, we just flash a message and redirect
+        
         flash(f'Thank you, {name}! Your message has been sent.')
         
-        return redirect(url_for('thank_you'))  # Redirect to the home page after form submission
+        return redirect(url_for('thank_you'))  
 
     return render_template('contact.html')
 @app.route('/thank_you')
@@ -38,4 +37,4 @@ def go_home():
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=80)
