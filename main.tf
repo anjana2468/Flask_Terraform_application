@@ -12,7 +12,7 @@ resource "aws_instance" "test_instance" {
     type        = "ssh"
     host        = self.public_ip   # The instance's public IP
     user        = "ubuntu"        # The default username for the AMI
-  private_key = file("C:\\Users\\dci-student\\Downloads\\anjana-key-pair.pem")  # Path to your private key
+  private_key = file("C:\\Users\\issac\\OneDrive\\Documents\\awslogin.pem")  # Path to your private key
   }
   # Provisioners to copy files and folders
   provisioner "file" {
