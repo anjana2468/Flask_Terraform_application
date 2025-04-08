@@ -3,28 +3,28 @@
 This project demonstrates the deployment of a Flask application on an AWS EC2 instance using Terraform for infrastructure provisioning. The Flask app serves a simple website with routes for Home, About, Contact, and a Thank You page.
 
 ## Features
-1. Flask Application: A Python-based web application with pre-designed routes and templates.
+### 1. Flask Application: A Python-based web application with pre-designed routes and templates.
 
-2.  AWS Infrastructure:
+### 2.  AWS Infrastructure:
     - EC2 instance with a custom security group.
     - VPC, Subnets, Internet Gateway, and Route Table.
 
-3. Automation: Deployment automated with Terraform and remote-exec provisioners.
+### 3. Automation: Deployment automated with Terraform and remote-exec provisioners.
 
-4. Customizable: Modify the app or Terraform configurations to fit your needs.
+### 4. Customizable: Modify the app or Terraform configurations to fit your needs.
 
-### Prerequisites
-1. Software/Tools:
+## Prerequisites
+### 1. Software/Tools:
    - Python 3.x
    - Terraform CLI
    - AWS CLI
    - An SSH key pair (e.g., anjana-key-pair.pem)
 
-2. Environment:
+### 2. Environment:
    - AWS account configured with appropriate permissions.
    - Terraform setup in your local machine.
 
-3. Python Packages:
+### 3. Python Packages:
    - Flask (installed via pip or in a virtual environment).
 
 ### Project Structure
@@ -46,31 +46,34 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 │   └── security.tf      # Security group configuration
 └── README.md  
 ```          
-### Deployment Steps
-1. Clone the Repository
+## Deployment Steps
+### 1. Clone the Repository
    -  git clone https://github.com/anjana2468/Flask_Terraform_application.git
    -  cd Flask_Terraform_application
 
-### Configure Terraform
-2. Initialize Terraform:
+## Configure Terraform
+### 2. Initialize Terraform:
   -  terraform init
 
-3. Deploy AWS Infrastructure
-### Apply the Terraform configuration:
+### 3. Deploy AWS Infrastructure
+## Apply the Terraform configuration:
   - terraform apply
   - Note the Public IP of the created EC2 instance from the output.
 
-4. Access the Flask App
+## 4. Access the Flask App
 ### SSH into the instance:
+  ```
   - ssh -i anjana-key-pair.pem ubuntu@<instance-public-ip>
-
-5. Access the app in your browser:
- - http://<instance-public-ip>:8080
-
-6. To remove the infrastructure:
+```
+### 5. Access the app in your browser:
+ ```
+- http://<instance-public-ip>:8080
+```
+### 6. To remove the infrastructure:
  - terraform destroy
 
-### Remote Execution Code
+## Remote Execution Code
+```
 - The Terraform provisioner block installs Python, Flask, and runs the Flask application on the EC2 instance:
 - provisioner "remote-exec" {
 -  inline = [
@@ -81,7 +84,7 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 -    "sudo /home/ubuntu/venv/bin/python /home/ubuntu/app.py > /home/ubuntu/app.log 2>&1 &"
   ]
 }
-
+```
 # Screenshots:
 
 ![Screenshot 2025-04-01 113015](https://github.com/user-attachments/assets/d7f6aebe-27c7-42dd-9bcf-08e803221c74)
