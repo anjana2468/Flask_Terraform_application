@@ -5,7 +5,7 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 ## Features
 ### 1. Flask Application: A Python-based web application with pre-designed routes and templates.
 
-🧠 Flask Pages Overview
+## 🧠 Flask Pages Overview
 
 `home.html` – The home page serves as the entry point to the application. It provides a welcoming introduction and basic navigation to other sections of the site
 
