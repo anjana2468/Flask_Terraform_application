@@ -6,17 +6,18 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 ### 1. Flask Application: A Python-based web application with pre-designed routes and templates.
 
 🧠 Flask Pages Overview
-home.html – The home page serves as the entry point to the application. It provides a welcoming introduction and basic navigation to other sections of the site
 
-contact.html – This page contains a contact form for users to reach out or submit inquiries. It includes:
+`home.html` – The home page serves as the entry point to the application. It provides a welcoming introduction and basic navigation to other sections of the site
 
-    Input fields: name, email, message
+`contact.html` – This page contains a contact form for users to reach out or submit inquiries. It includes:
 
-    A submit button that redirects to thank_you.html
+Input fields: name, email, message
 
-about.html – This page gives background about the project
+A submit button that redirects to `thank_you.html`
 
-thank_you.html – This page is shown after the contact form is submitted to confirm that the message was received.
+`about.html` – This page gives background about the project
+
+`thank_you.html` – This page is shown after the contact form is submitted to confirm that the message was received.
 
 ### 2.  AWS Infrastructure:
     - EC2 instance with a custom security group.
