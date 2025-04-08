@@ -11,9 +11,9 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 
 `contact.html` – This page contains a contact form for users to reach out or submit inquiries. It includes:
 
--Input fields: name, email, message
+  - Input fields: name, email, message
 
--A submit button that redirects to `thank_you.html`
+  - A submit button that redirects to `thank_you.html`
 
 `about.html` – This page gives background about the project
 
