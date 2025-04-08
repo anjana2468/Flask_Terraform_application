@@ -81,6 +81,8 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
   ]
 }
 
+# Screenshots:
+
 ![Screenshot 2025-04-01 113015](https://github.com/user-attachments/assets/d7f6aebe-27c7-42dd-9bcf-08e803221c74)
 
 ![Screenshot 2025-04-01 113035](https://github.com/user-attachments/assets/7aeb3de5-3c01-4098-8685-0d69e7e1b96a)
