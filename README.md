@@ -47,8 +47,8 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
           
 ### Deployment Steps
 1. Clone the Repository
--  git clone <your-repo-url>
--  cd <project-directory>
+-  git clone https://github.com/anjana2468/Flask_Terraform_application.git
+-  cd Flask_Terraform_application
 
 ### Configure Terraform
 2. Initialize Terraform:
@@ -80,6 +80,7 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 -    "sudo /home/ubuntu/venv/bin/python /home/ubuntu/app.py > /home/ubuntu/app.log 2>&1 &"
   ]
 }
+
 
 License
 This project is licensed under the MIT License.
