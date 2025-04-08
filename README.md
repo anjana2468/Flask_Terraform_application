@@ -5,6 +5,19 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 ## Features
 ### 1. Flask Application: A Python-based web application with pre-designed routes and templates.
 
+🧠 Flask Pages Overview
+home.html – The home page serves as the entry point to the application. It provides a welcoming introduction and basic navigation to other sections of the site
+
+contact.html – This page contains a contact form for users to reach out or submit inquiries. It includes:
+
+    Input fields: name, email, message
+
+    A submit button that redirects to thank_you.html
+
+about.html – This page gives background about the project
+
+thank_you.html – This page is shown after the contact form is submitted to confirm that the message was received.
+
 ### 2.  AWS Infrastructure:
     - EC2 instance with a custom security group.
     - VPC, Subnets, Internet Gateway, and Route Table.
@@ -50,16 +63,32 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 ### 1. Clone the Repository
    -  git clone https://github.com/anjana2468/Flask_Terraform_application.git
    -  cd Flask_Terraform_application
+### 2. Set Up Flask App
+   Install the required Python packages:
+````
+pip install -r requirements.txt
+````
+   Start the Flask app locally (optional for testing):
+   ```
+python manage.py runserver
+````
 
-## Configure Terraform
+## Deploy with Terraform
+### 1. Configure AWS CLI
+```
+aws configure
+```
+
 ### 2. Initialize Terraform:
-  -  terraform init
+ ```
+ -  terraform init
+````
 
-### 3. Deploy AWS Infrastructure
 ## Apply the Terraform configuration:
-  - terraform apply
+ ```
+ - terraform apply
   - Note the Public IP of the created EC2 instance from the output.
-
+```
 ## 4. Access the Flask App
 ### SSH into the instance:
   ```
@@ -70,8 +99,9 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 - http://<instance-public-ip>:8080
 ```
 ### 6. To remove the infrastructure:
+ ```
  - terraform destroy
-
+```
 ## Remote Execution Code
 ```
 - The Terraform provisioner block installs Python, Flask, and runs the Flask application on the EC2 instance:
