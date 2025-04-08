@@ -1,8 +1,8 @@
-### Flask Application Deployment with Terraform
+# Flask Application Deployment with Terraform
 
 This project demonstrates the deployment of a Flask application on an AWS EC2 instance using Terraform for infrastructure provisioning. The Flask app serves a simple website with routes for Home, About, Contact, and a Thank You page.
 
-### Features
+## Features
 1. Flask Application: A Python-based web application with pre-designed routes and templates.
 
 2.  AWS Infrastructure:
@@ -28,6 +28,7 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
    - Flask (installed via pip or in a virtual environment).
 
 ### Project Structure
+```
 .
 ├── app.py               # Flask application file
 ├── static/              # Static assets like CSS
@@ -44,7 +45,7 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
 │   ├── network.tf       # Network resources
 │   └── security.tf      # Security group configuration
 └── README.md  
-          
+```          
 ### Deployment Steps
 1. Clone the Repository
    -  git clone https://github.com/anjana2468/Flask_Terraform_application.git
