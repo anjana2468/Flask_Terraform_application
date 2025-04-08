@@ -81,6 +81,17 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
   ]
 }
 
+![Screenshot 2025-04-01 113015](https://github.com/user-attachments/assets/d7f6aebe-27c7-42dd-9bcf-08e803221c74)
+
+![Screenshot 2025-04-01 113035](https://github.com/user-attachments/assets/7aeb3de5-3c01-4098-8685-0d69e7e1b96a)
+
+![Screenshot 2025-04-01 113137](https://github.com/user-attachments/assets/0495aafd-3325-456a-bda0-e7c4eaadee13)
+
+![Screenshot 2025-04-01 113153](https://github.com/user-attachments/assets/eca3c76f-e814-4318-9a56-6dabd350daf7)
+
+
+
+
 
 License
 This project is licensed under the MIT License.
