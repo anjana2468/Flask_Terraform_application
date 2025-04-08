@@ -64,7 +64,7 @@ This project demonstrates the deployment of a Flask application on an AWS EC2 in
   - ssh -i anjana-key-pair.pem ubuntu@<instance-public-ip>
 
 5. Access the app in your browser:
- - http://<instance-public-ip>/
+ - http://<instance-public-ip>:8080
 
 6. To remove the infrastructure:
  - terraform destroy
