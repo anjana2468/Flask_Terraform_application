@@ -97,7 +97,7 @@ aws configure
 ```
 ### 5. Access the app in your browser:
  ```
-- http://<instance-public-ip>:8080
+- http://<instance-public-ip>:80
 ```
 ### 6. To remove the infrastructure:
  ```
